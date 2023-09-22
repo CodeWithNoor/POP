@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Big+Shoulders+Display:wght@400;900&family=Roboto:wght@100&display=swap");
+
+.navbar {
+  background-color: #ffffff00;
+  padding: 3rem 6rem;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end !important;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar > .nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end !important;
+}
+
+.neon-image{
+    width: 100px;
+    position: absolute;
+    top: 22px;
+    right: 705px;
+    transform: rotateX(190deg); 
+} 
+
+.navbar > .nav-list > .nav-item {
+  margin: 0 1rem;
+  list-style: none;
+}
+
+.navbar > .nav-list > .nav-item > a {
+    color: rgb(172, 233, 139);;
+    font-family: 'Big Shoulders Display', cursive;
+    line-height: 0.9728682em;
+    text-align: center;
+    text-transform: uppercase;
+    filter: drop-shadow(0.05em 0.05em 0.01785031em rgba(47, 133, 1, 0.95)) drop-shadow(0.1em 0.1em 0.08925156em rgba(56, 157, 3, 0.750000)) drop-shadow(0.1em 0.1em 0.26775469em rgba(56, 157, 3, 0.440000));
+    transform: translateZ(0px);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar > .nav-list > .nav-item:last-child{
+    margin-left: 3rem;
+}
+
+.border-image {
+  position: absolute;
+  top: 25px;
+  right: 66px;
+  width: 191px;
+}
+/* .navbar > .nav-list > .nav-item:last-child:hover{
+    transform: translate(0, -5px);
+    transition: all 0.3s ease-in-out;
+} */
