@@ -1,28 +1,25 @@
 import React from 'react'
 import "../css/Navbar.css"
+import Image_2 from "../assest/5QYw2bXpd59hSw9OJRXRNw==.png"
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-    return (
-        <>
-            <div className="containers-fluid">
-                <nav className='navbar'>
-                         <div>
-                            <img className='neon-image' src="./assest/2TPRgTsb1nZ30fG1sycISg==.png" alt="" />
-                        </div> 
-                    <ul className='nav-list'>
-                        <li className='nav-item'><a href="/">HOME</a></li>
-                        <li className='nav-item'><a href="/">ROADMAP</a></li>
-                        <li className='nav-item'><a href="/">WHITEPAPER</a></li>
-                        <li className='nav-item'><a href="/">AMBASODORS</a></li>
-                        <li className='nav-item'>
-                            <img className='border-image' src="./assest/5QYw2bXpd59hSw9OJRXRNw==.png" alt="" />
-                            <a href="/">PLAY GAME</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <nav className='navbar'>
+        <ul className='navbar-nav'>
+            <li className='nav-item'><Link href='/' className='nav-link'>HOME</Link></li>
+            <li className='nav-item'><Link href='/' className='nav-link'>ROADMAP</Link></li>
+            <li className='nav-item'><Link href='/' className='nav-link'>WHITEPAPER</Link></li>
+            <li className='nav-item'><Link href='/' className='nav-link'>AMBASODORS</Link></li>
+            <li className='button'>
+                <img src={Image_2}/>
+                <span className="text">PLAY GAME</span>
+            </li>
+        </ul>
+      </nav>
+    </>
+  )
 }
 
 export default Navbar
