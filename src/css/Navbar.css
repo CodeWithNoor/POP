@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Big+Shoulders+Display:wght@400;900&family=Roboto:wght@100&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Big+Shoulders+Display:wght@400;900&family=Roboto:wght@100&display=swap"); */
 
 *{
     margin: 0;
@@ -16,7 +16,7 @@
     justify-content: flex-end;
 } */
 
-.navbar > .navbar-nav{
+/* .navbar > .navbar-nav{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -76,3 +76,27 @@
     font-size: 25px;
     font-weight: bold;
   } */
+
+  
+.Header .nav-link {
+    color: rgb(172, 233, 139);
+    font-family: 'Big Shoulders Display', cursive;
+    line-height: 0.9728682em;
+    text-align: center;
+    filter: drop-shadow(0.05em 0.05em 0.01785031em rgba(47, 133, 1, 0.95)) drop-shadow(0.1em 0.1em 0.08925156em rgba(56, 157, 3, 0.750000)) drop-shadow(0.1em 0.1em 0.26775469em rgba(56, 157, 3, 0.440000));
+    transform: translateZ(0px);
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ClipImage {
+    max-width: 210px;
+    top: -7px;
+    left: 2px;
+}
+
+.MenuNeonClip {
+    width: 100px;
+    transform: rotate(270deg) translate(0%, -100%);
+}
