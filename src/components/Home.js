@@ -1,15 +1,12 @@
 import React from 'react'
-import Navbar from './Navbar'
 import video_1 from "../assets/top-video.mp4"
 import Image_1 from "../assets/neon-bor.png"
 import Image_2 from "../assets/border-bottom.png"
-import Image_3 from "../assets/top-border.png"
 import Image_4 from "../assets/bWo4zI-qhM2LTamGiSdEdg==.png"
 import Image_5 from "../assets/FAf_tuSU5LNHncWuXIDO-Q==.png"
 import Image_6 from "../assets/IMWeHiCdCFcXl1PVEuDPpw==.png"
 import Image_7 from "../assets/tVn5HuFayfFC7iP0jVX9HA==.png"
-// import Image_8 from "../assets/stop-image.png"
-import Image_9 from "../assets/New Project (5).png"
+import Image_9 from "../assets/New Project (12).png"
 import Image_10 from "../assets/image-10.png"
 import video_2 from "../assets/section-2.mp4"
 import Image_11 from "../assets/08d08dad90.gif"
@@ -39,9 +36,10 @@ import Image_30 from "../assets/KnrcNb5-k6R_lF2ANuPSPA%3D%3D-svg.png"
 import Image_31 from "../assets/one.png"
 import Image_32 from "../assets/three.png"
 import Image_33 from "../assets/two.png"
-import Image_34 from "../assets/footer-border.png"
+import Image_34 from "../assets/last-section.png"
 import Image_35 from "../assets/queen.png"
 import Image_36 from "../assets/HalftoneBG.png"
+import Image_37 from "../assets/bg-image.png"
 import video_10 from "../assets/footer-video.mp4"
 import "../css/Home.css"
 
@@ -62,31 +60,18 @@ const Home = () => {
           />
           <div className="position-absolute bottom-0 end-0 w-100">
             <div className="position-absolute bottom-100 end-0 mb-3 px-3 ActionContainer text-sm-start text-center">
+              <img className="topborder" src={Image_1 || ""} alt="logo" />
               <img className="Logo" src={Logo || ""} alt="logo" />
               <p className="fs-4 text-white d-block">
                 Master the Race, Claim the Chase
               </p>
               <button className="btn ActionBtn rounded-0">Action</button>
             </div>
-            <img src={Image_2 || ""} alt="BorderBottom" className="w-100" style={{marginTop: "100px"}} />
+            <img src={Image_2 || ""} alt="BorderBottom" className="w-100" style={{ marginTop: "100px" }} />
           </div>
         </section>
       </div>
-      {/* <section className='container'>
-        <video className='bg-video' src={video_1} autoPlay="true" loop />
-        <div id='navbar'><Navbar /></div>
-        <div className='home-info row'>
-          <div className="col">
-            <img className='image-1' src={Image_1} alt='image-1' />
-            <img className='logo' src={Logo} alt='logo' />
-            <p className='title'>Master the Race, Claim the Chase</p>
-            <button className='btn' type='button'>Add a call-to-action</button>
-          </div>
-        </div>
-
-        <div className="border-bottom"><img src={Image_2} alt="" /></div>
-      </section> */}
-
+  
       <section className='container_1 w-100 position-relative '>
         <video
           className="bg-video"
@@ -95,7 +80,6 @@ const Home = () => {
           loop
           muted
         />
-
 
         <div className="secret-sauce w-100">
           <div className="d-flex flex-column align-items-center justify-content-center" style={{ height: "94vh" }}>
@@ -107,14 +91,15 @@ const Home = () => {
                 Payout Pursuit will be THE MULTICHAIN racing game of the GameFi universe. <br /> Gamers will have opportunities to win cryptocurrency prizes in daily, weekly, and monthly race events, as well as in special events.</p>
             </div>
 
-            <div className=" row m-0 w-100 border-danger d-flex">
+            <div className="row m-0 w-100 border-danger d-flex">
+              <img src={Image_37 || ""} alt="" />
               <div className="col-12 col-lg-6">
-                <img src={Image_4} alt="" style={{ width: "100px" }} />
-                <img src={Image_5} alt="" style={{ width: "100px" }} />
+                <img src={Image_4 || ""} alt="" style={{ width: "100px" }} />
+                <img src={Image_5 || ""} alt="" style={{ width: "100px" }} />
               </div>
               <div className="col-12 col-lg-6">
-                <img src={Image_6} alt="" style={{ width: "100px" }} />
-                <img src={Image_7} alt="" style={{ width: "100px" }} />
+                <img src={Image_6 || ""} alt="" style={{ width: "100px" }} />
+                <img src={Image_7 || ""} alt="" style={{ width: "100px" }} />
               </div>
             </div>
 
@@ -191,21 +176,23 @@ const Home = () => {
           <img src={Image_23 || ""} alt="" className='bg-image' />
           <h1 className='core-vision-title'>Core Vision</h1>
 
-          <div className="row core-vision-info w-100">
-            <div className="col-12 col-lg-4 p-2">
-              < video className='video-circle' src={video_6} autoPlay="true" loop />
-              <h1 className='drift-racing'>Drift Racing Game</h1>
-              <p className='drift-racing-info'>To create an engaging, browser-friendly, skill-based game that seamlessly integrates cryptocurrency stakes.</p>
-            </div>
-            <div className="col-12 col-lg-4 p-2">
-              < video className='video-circle' src={video_7} autoPlay="true" loop />
-              <h1 className='game-assests'>Ownable in-game assets</h1>
-              <p className='game-assests-info'>Payout NFTs you own become playable assets within the game, enhancing your gameplay experience</p>
-            </div>
-            <div className="col-12 col-lg-4 p-2">
-              < video className='video-circle' src={video_8} autoPlay="true" loop />
-              <h1 className='win-mechanism'>UNFATHOMABLE WIN MECHANISM</h1>
-              <p className='win-mechanism-info'>To give a fair chance of becoming The Drift King, who seizes the lion's share of the winnings. </p>
+          <div className="container-fluid" style={{ padding: "0 50px" }}>
+            <div className="row core-vision-info w-100">
+              <div className="col-12 col-lg-4 p-2">
+                < video className='video-circle' src={video_6} autoPlay="true" loop />
+                <h1 className='drift-racing'>Drift Racing Game</h1>
+                <p className='drift-racing-info'>To create an engaging, browser-friendly, skill-based game that seamlessly integrates cryptocurrency stakes.</p>
+              </div>
+              <div className="col-12 col-lg-4 p-2">
+                < video className='video-circle' src={video_7} autoPlay="true" loop />
+                <h1 className='game-assests'>Ownable in-game assets</h1>
+                <p className='game-assests-info'>Payout NFTs you own become playable assets within the game, enhancing your gameplay experience</p>
+              </div>
+              <div className="col-12 col-lg-4 p-2">
+                < video className='video-circle' src={video_8} autoPlay="true" loop />
+                <h1 className='win-mechanism'>UNFATHOMABLE WIN MECHANISM</h1>
+                <p className='win-mechanism-info'>To give a fair chance of becoming The Drift King, who seizes the lion's share of the winnings. </p>
+              </div>
             </div>
           </div>
         </div>
@@ -223,48 +210,49 @@ const Home = () => {
           muted
         />
 
-        <div className="development-roadmap w-100 mt-5">
+        <div className="development-roadmap w-100">
           <img src={Image_25 || ""} alt="" className='bg-image' />
           <h1 className='roadmap-title'>Development <br /> Roadmap</h1>
 
-          <div className="row w-100">
-            <div className="col-12 col-lg-4 p-2">
-              <div className="v-images">
-                <img src={Image_30 || ""} alt="" style={{ width: "250px" }} />
-                <img src={Image_31 || ""} alt="" className='one' />
-              </div>
+          <div className="container-fluid" style={{ padding: "0 50px" }}>
+            <div className="row w-100">
+              <div className="col-12 col-lg-4 p-2">
+                <div className="v-images">
+                  <img src={Image_30 || ""} alt="" className='v' style={{ width: "250px" }} />
+                  <img src={Image_31 || ""} alt="" className='one' />
+                </div>
 
-              <div className="v-info">
-                <h1 className='text-white text-center fs-bold'>V1 : Global Leaderboard</h1>
-                <p className='text-white text-center my-3'>Launch Beta version of the gameplay, enabling users to get acquainted with in-game physics before actual competition. </p>
-              </div>
+                <div className="v-info">
+                  <h1 className='text-white text-center fs-bold'>V1 : Global Leaderboard</h1>
+                  <p className='text-white text-center my-3'>Launch Beta version of the gameplay, enabling users to get acquainted with in-game physics before actual competition. </p>
+                </div>
 
-            </div>
-            <div className="col-12 col-lg-4 p-2">
-              <div className="v-images">
-                <img src={Image_30 || ""} alt="" style={{ width: "250px" }} />
-                <img src={Image_32 || ""} alt="" className='two' />
               </div>
+              <div className="col-12 col-lg-4 p-2">
+                <div className="v-images">
+                  <img src={Image_30 || ""} alt="" className='v' style={{ width: "250px" }} />
+                  <img src={Image_32 || ""} alt="" className='two' />
+                </div>
 
-              <div className="v-info">
-                <h1 className='text-white text-center fs-bold'>V2 : Blockchain Integration</h1>
-                <p className='text-white text-center my-3'>Events will require an entry fee, that pools up as rewards for the top tier winners (top 30%)</p>
+                <div className="v-info">
+                  <h1 className='text-white text-center fs-bold'>V2 : Blockchain Integration</h1>
+                  <p className='text-white text-center my-3'>Events will require an entry fee, that pools up as rewards for the top tier winners (top 30%)</p>
+                </div>
               </div>
-            </div>
-            <div className="col-12 col-lg-4 p-2">
-              <div className="v-images">
-                <img src={Image_30 || ""} alt="" style={{ width: "250px" }} />
-                <img src={Image_33 || ""} alt="" className='three' />
-              </div>
-              <div className="v-info">
-                <h1 className='text-white text-center fs-bold'>V3 : Multichain madness</h1>
-                <p className='text-white text-center my-3'>Compete against players from others chains and Win a pot of mixed native chain tokens </p>
+              <div className="col-12 col-lg-4 p-2">
+                <div className="v-images">
+                  <img src={Image_30 || ""} alt="" className='v' style={{ width: "250px" }} />
+                  <img src={Image_33 || ""} alt="" className='three' />
+                </div>
+                <div className="v-info">
+                  <h1 className='text-white text-center fs-bold'>V3 : Multichain madness</h1>
+                  <p className='text-white text-center my-3'>Compete against players from others chains and Win a pot of mixed native chain tokens </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <img src={Image_34 || ""} alt="FooterBorder" className="w-100" style={{ marginTop: "-110px" }} />
+        <img src={Image_34 || ""} alt="FooterBorder" className="footer-border w-100" style={{ marginTop: "-126px" }} />
       </section>
 
       {/* *********************************************************** */}
@@ -279,25 +267,25 @@ const Home = () => {
         <img src={Image_36 || ""} alt='' className='bg-overlay w-100 h-100 opacity-50'
         />
 
-        <div className="row m-0 w-100">
-          <div className="col-lg-5 col-sm-6 col-12">
-            <img src={Logo || ""} alt='' />
-            <p>In this high-stakes race, only ONE can reign supreme as the undisputed Drift King. </p>
+        <div className="container-fluid">
+          <div className="row m-0 w-100">
+            <div className="footer col-lg-5 col-sm-6 col-12">
+              <img src={Logo || ""} alt='' style={{ width: "450px" }} />
+              <p>In this high-stakes race, only ONE can reign supreme as the undisputed Drift King. </p>
+            </div>
+            <div className="col-lg-7 col-sm-6 col-12">
+              <img src={Image_35 || ""} alt='' />
+            </div>
           </div>
-          <div className="col-lg-7 col-sm-6 col-12">
-            <img src={Image_35 || ""} alt='' />
-          </div>
-        </div>
 
-        <div className="row m-0 w-100">
-          <h1 className='text-start'>Connect with us</h1>
-          <div className="col-lg-12 col-sm-12 col-12">
-            <ul>
-              <li><a href="http://">Instagram</a></li>
-              <li><a href="http://">Twitter</a></li>
-              <li><a href="http://">Facebook</a></li>
-              <li><a href="http://">Linkedin</a></li>
-              <li><a href="mailto:info@payoutpursuit.com">Info@payoutpursuit.com</a></li>
+          <div className="row m-0 w-100">
+            <h1 className='text-start'>Connect with us</h1>
+            <ul className='link-items col-lg-12 col-sm-12 col-12'>
+              <li className='col-lg-2 col-sm-2'><a href="http://">Instagram</a></li>
+              <li className='col-lg-2 col-sm-2'><a href="http://">Twitter</a></li>
+              <li className='col-lg-2 col-sm-2'><a href="http://">Facebook</a></li>
+              <li className='col-lg-2 col-sm-2'><a href="http://">Linkedin</a></li>
+              <li className='col-lg-2 col-sm-2'><a href="mailto:info@payoutpursuit.com">Info@payoutpursuit.com</a></li> 
             </ul>
           </div>
         </div>
